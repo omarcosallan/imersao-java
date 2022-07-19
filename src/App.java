@@ -1,4 +1,6 @@
+import java.io.InputStream;
 import java.net.URI;
+import java.net.URL;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
@@ -10,7 +12,10 @@ public class App {
     public static void main(String[] args) throws Exception {
 
         // fazer uma conexão HTTP e buscar os top 250 movies
-        String url = "https://mocki.io/v1/9a7c1ca9-29b4-4eb3-8306-1adb9d159060";
+        // String apiKey = System.getenv("API_KEY");
+        // String url = "https://imdb-api.com/en/API/Top250Movies/" + apiKey;
+        // String url = "https://mocki.io/v1/9a7c1ca9-29b4-4eb3-8306-1adb9d159060";
+        String url = "https://api.mocki.io/v2/549a5d8b";
         URI endereco = URI.create(url);
         var client = HttpClient.newHttpClient();
         var request = HttpRequest.newBuilder(endereco).GET().build();
@@ -22,15 +27,28 @@ public class App {
         List<Map<String, String>> topFilmes = parser.parse(body);
 
         // exibir e manipular os dados
+        var geradora = new GeradoraDeFigurinhas();
         for (Map<String, String> filmes : topFilmes) {
-            System.out.println("Título: " + filmes.get("title"));
-            System.out.println("Imagem: " + filmes.get("image"));
-            System.out.println("Classificação: " + filmes.get("imDbRating"));
-            int rating = (int) Math.round(Double.parseDouble(filmes.get("imDbRating")));
-            for (int i = 1; i <= rating; i++) {
-            	System.out.print("\u2b50");
+
+            String urlImagem = filmes.get("image");
+            String titulo = filmes.get("title");
+            String nomeArquivo = titulo.replace(":", "-")  + ".png";
+
+            /*String novaUrl;
+            if (urlImagem.charAt(urlImagem.indexOf('@') + 1) == '@') {
+                novaUrl = urlImagem.substring(0, urlImagem.indexOf('@') + 2) + urlImagem.substring(urlImagem.length() - 4);
+            } else {
+                novaUrl = urlImagem.substring(0, urlImagem.indexOf('@') + 1) + urlImagem.substring(urlImagem.length() - 4);
+            }*/
+
+            try {
+                InputStream inputStream = new URL(urlImagem).openStream();
+                geradora.criar(inputStream, nomeArquivo);
+            } catch (Exception e) {
+                System.out.println("Imagem não encontrada ou link inválido!");
             }
-            System.out.println();
+            
+            System.out.println(titulo);
         }
     }
 }
