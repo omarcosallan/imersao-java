@@ -30,8 +30,7 @@ public class App {
             for (int i = 1; i <= rating; i++) {
             	System.out.print("\u2b50");
             }
-            System.out.println("");      
-            //chcp 65001 = codigo para aparecer a estrela
+            System.out.println();
         }
     }
 }
