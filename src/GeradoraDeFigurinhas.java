@@ -10,7 +10,7 @@ import javax.imageio.ImageIO;
 
 public class GeradoraDeFigurinhas {
 
-    public void criar(InputStream inputStream, String nomeArquivo) throws IOException {
+    public void criar(InputStream inputStream, String nomeArquivo, String textoFigurinha) throws IOException {
        
         // leitura da imagem
 
@@ -33,11 +33,11 @@ public class GeradoraDeFigurinhas {
         var fonte = new Font(Font.SANS_SERIF, Font.BOLD, 64);
         graphics.setColor(Color.YELLOW);
         graphics.setFont(fonte);
-        int stringLargura = graphics.getFontMetrics().stringWidth("TOPZERA");
+        int stringLargura = graphics.getFontMetrics().stringWidth(textoFigurinha);
         int posicao = (largura / 2) - (stringLargura / 2);
 
         // escrever uma frase na nova imagem
-        graphics.drawString("TOPZERA", posicao, novaAltura - 100);
+        graphics.drawString(textoFigurinha, posicao, novaAltura - 100);
 
         // escrever a nova imagem em um arquivo
         ImageIO.write(novaImagem, "png", new File("saida/" + nomeArquivo));
