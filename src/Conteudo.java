@@ -14,7 +14,4 @@ public class Conteudo {
     public String getUrlImagem() {
         return urlImagem;
     }
-
-    
-    
 }

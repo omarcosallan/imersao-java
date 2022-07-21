@@ -50,3 +50,20 @@ LIGANDO AS PONTAS, REFATORAÇÃO E ORIENTAÇÃO A OBJETOS 🔥
 > Criar uma Enum que une, como configurações, a URL da API e o extrator utilizado
 
 > Desafio supremo: consumir outras APIs que contém imagens, como a da Marvel, que é bem diferente. Repositório com APIs públicas: clique aqui.
+
+## Dia 04
+CRIANDO NOSSA PRÓPRIA API COM SPRING 💻
+
+- O objeito foi construir uma API REST para expor nosso próprio conteúdo, utilizando ferramentas profissionais como o Spring Framework e um banco de dados NoSQL.
+> Finalizar o CRUD (Create, Read, Update e Delete) para que se possa atualizar e excluir uma linguagem cadastrada;
+
+> Devolver a listagem ordenada pelo ranking;
+
+> Criar na sua API um modelo de entidade com nomes diferentes de title e image e criar seu próprio extrator de informações personalizado OU, manter com o nome title e image e traduzir para que seja retornado como título e imagem através do uso de DTO (Data Transfer Object);
+
+> Retornar o status 201 quando um recurso (linguagem, no nosso caso) for cadastrado através do POST;
+
+> Desafio supremo: Aplicar modificações parciais no recurso através do método PATCH, por exemplo, modificando o número de votos ou de pessoas que utilizam cada linguagem de programação.
+![image](https://user-images.githubusercontent.com/102323652/180332677-cfe7210d-004d-45cb-910a-f3e661e8998f.png)
+![JavaScript](https://user-images.githubusercontent.com/102323652/180333197-6efe531e-b098-423d-a6df-8b618baa4286.png)
+![Java](https://user-images.githubusercontent.com/102323652/180333554-28f60ab8-3b8b-4187-9597-fa2d6b7419a1.png)

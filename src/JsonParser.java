@@ -14,7 +14,6 @@ public class JsonParser {
 
         Matcher matcher = REGEX_ITEMS.matcher(json);
         if (!matcher.find()) {
-
             throw new IllegalArgumentException("Não encontrou items.");
         }
 
