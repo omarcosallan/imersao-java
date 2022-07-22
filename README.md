@@ -64,7 +64,7 @@ CRIANDO NOSSA PRÓPRIA API COM SPRING 💻
 > Retornar o status 201 quando um recurso (linguagem, no nosso caso) for cadastrado através do POST;
 
 > Desafio supremo: Aplicar modificações parciais no recurso através do método PATCH, por exemplo, modificando o número de votos ou de pessoas que utilizam cada linguagem de programação.
+
 ![image](https://user-images.githubusercontent.com/102323652/180332677-cfe7210d-004d-45cb-910a-f3e661e8998f.png)
-<<<<<<< HEAD
 ![JavaScript](https://user-images.githubusercontent.com/102323652/180333197-6efe531e-b098-423d-a6df-8b618baa4286.png)
 ![Java](https://user-images.githubusercontent.com/102323652/180333554-28f60ab8-3b8b-4187-9597-fa2d6b7419a1.png)
