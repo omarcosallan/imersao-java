@@ -68,5 +68,3 @@ CRIANDO NOSSA PRÓPRIA API COM SPRING 💻
 <<<<<<< HEAD
 ![JavaScript](https://user-images.githubusercontent.com/102323652/180333197-6efe531e-b098-423d-a6df-8b618baa4286.png)
 ![Java](https://user-images.githubusercontent.com/102323652/180333554-28f60ab8-3b8b-4187-9597-fa2d6b7419a1.png)
-=======
->>>>>>> ca160ed1a6a740241119958e6a1d09a53964bd9b
