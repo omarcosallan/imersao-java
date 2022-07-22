@@ -1,8 +1,9 @@
-## Imersão Java - Alura-Stickers 💻
+![image](https://user-images.githubusercontent.com/102323652/180563163-064cb677-b8d0-45fa-9009-34235969003a.png)
+## Imersão Java - Alura-Stickers 💻🔥
 
 ## Dia 01
 
-CONSUMINDO UMA API DE FILMES COM JAVA ⚡
+CONSUMINDO UMA API DE FILMES COM JAVA 🔨
 
 - O objetivo foi consumir a API do IMDb (até derubar) e exibir os filmes mais populares, destacando seus pôsteres e visualizando sua classificação.
 - Desafios:
@@ -16,7 +17,7 @@ CONSUMINDO UMA API DE FILMES COM JAVA ⚡
 
 
 ## Dia 02
-GERANDO FIGURINHAS PARA WHATSAPP 🔥
+GERANDO FIGURINHAS PARA WHATSAPP 🔨
 
 - O objetivo foi criar um gerador de figurinhas explorando outras bibliotecas nativas do Java, para que possamos enviar por Whatsapp os nossos filmes preferidos!
 - Desafios:
@@ -37,7 +38,7 @@ GERANDO FIGURINHAS PARA WHATSAPP 🔥
 ![image](https://user-images.githubusercontent.com/102323652/179871035-426b6a34-3dde-4368-87d9-43992c9e334e.png)
 
 ## Dia 03
-LIGANDO AS PONTAS, REFATORAÇÃO E ORIENTAÇÃO A OBJETOS 🔥
+LIGANDO AS PONTAS, REFATORAÇÃO E ORIENTAÇÃO A OBJETOS 🔨
 
 - O objetivo foi melhorar nosso código com as refatorações necessárias para torná-lo mais flexível e fácil de entender.
 - Desafios:
@@ -49,10 +50,10 @@ LIGANDO AS PONTAS, REFATORAÇÃO E ORIENTAÇÃO A OBJETOS 🔥
 
 > Criar uma Enum que une, como configurações, a URL da API e o extrator utilizado
 
-> Desafio supremo: consumir outras APIs que contém imagens, como a da Marvel, que é bem diferente. Repositório com APIs públicas: clique aqui.
+- ' Desafio supremo:' consumir outras APIs que contém imagens, como a da Marvel, que é bem diferente. Repositório com APIs públicas: clique aqui.
 
 ## Dia 04
-CRIANDO NOSSA PRÓPRIA API COM SPRING 💻
+CRIANDO NOSSA PRÓPRIA API COM SPRING 🔨
 
 - O objeito foi construir uma API REST para expor nosso próprio conteúdo, utilizando ferramentas profissionais como o Spring Framework e um banco de dados NoSQL.
 > Finalizar o CRUD (Create, Read, Update e Delete) para que se possa atualizar e excluir uma linguagem cadastrada;
@@ -63,8 +64,34 @@ CRIANDO NOSSA PRÓPRIA API COM SPRING 💻
 
 > Retornar o status 201 quando um recurso (linguagem, no nosso caso) for cadastrado através do POST;
 
-> Desafio supremo: Aplicar modificações parciais no recurso através do método PATCH, por exemplo, modificando o número de votos ou de pessoas que utilizam cada linguagem de programação.
+- ' Desafio supremo:' Aplicar modificações parciais no recurso através do método PATCH, por exemplo, modificando o número de votos ou de pessoas que utilizam cada linguagem de programação.
 
 ![image](https://user-images.githubusercontent.com/102323652/180332677-cfe7210d-004d-45cb-910a-f3e661e8998f.png)
 ![JavaScript](https://user-images.githubusercontent.com/102323652/180333197-6efe531e-b098-423d-a6df-8b618baa4286.png)
 ![Java](https://user-images.githubusercontent.com/102323652/180333554-28f60ab8-3b8b-4187-9597-fa2d6b7419a1.png)
+
+## Dia 05
+PUBLICANDO NOSSA API NO CLOUD ⚡
+
+- Vamos tornar nossa aplicação acessível por qualquer pessoa, fazendo o deploy na nuvem. Além disso, vamos gerar figurinhas a partir do conteúdo dessa nossa API.
+
+> Compartilhe com seus amigos a sua URL do Heroku, para que eles possam consumir a sua API (com o padrão de atributos title e image) e gerar figurinhas do conteúdo que você utilizou (linguagens de programação, filmes, músicas);
+
+> Colocar a aplicação no cloud da Oracle;
+
+> Implementar algum mecanismo de votação na API, para que outros amigos votem nas linguagens preferidas para que se possa fazer um ranking;
+
+- ' Desafio supremo:' Evoluir o projeto das três primeiras aula para que ele gere um bundle de stickers, para que se possa fazer o download e já incluir vários stickers no WhatsApp; Usar os conhecimentos aprendidos em alguma imersão React da Alura e fazer uma aplicação front-end para gerar esse bundle, onde possa se passar a URL do conteúdo e já visualizar os stickers;
+
+Link da API: https://linguagens-imersao-alura-api.herokuapp.com/linguagens
+Link do Repositório: https://github.com/getmarcos/linguagens-api
+
+Resultados:
+![image](https://user-images.githubusercontent.com/102323652/180560708-0f64d482-f6ff-4596-a2ea-b13c8424b6f1.png)
+
+
+![image](https://user-images.githubusercontent.com/102323652/180557228-cade641d-2110-4ee6-acbd-e8ba92e86785.png)
+
+## Agradecimentos
+É um prazer participar de uma intensa semana de aprendizado, com pessoas muito qualificadas. Sem dúvidas essa semana foi fundamental e decisiva na reafirmação da minha escolha, é aqui que devo investir.
+E agora, ALURA + ONE!

@@ -14,21 +14,18 @@ public class GeradoraDeFigurinhas {
 
         BufferedImage original = ImageIO.read(inputStream);
 
-        int largura = original.getWidth();
-        int altura = original.getHeight();
-        int novaAltura = altura + 200;
-        BufferedImage novaImagem = new BufferedImage(largura, novaAltura, BufferedImage.TRANSLUCENT);
+        BufferedImage novaImagem = new BufferedImage(original.getWidth(), original.getHeight() + 80, BufferedImage.TRANSLUCENT);
 
         Graphics2D graphics = (Graphics2D) novaImagem.getGraphics();
         graphics.drawImage(original, 0, 0, null);
 
-        var fonte = new Font(Font.SANS_SERIF, Font.BOLD, largura / 10);
+        var fonte = new Font(Font.SANS_SERIF, Font.BOLD, original.getWidth() / 10);
         graphics.setColor(Color.YELLOW);
         graphics.setFont(fonte);
-        int stringLargura = graphics.getFontMetrics().stringWidth("A NÚMERO 1 ❤");
-        int posicao = (largura / 2) - (stringLargura / 2);
-
-        graphics.drawString("A NÚMERO 1 ❤", posicao, novaAltura - 100);
+        
+        int stringLargura = graphics.getFontMetrics().stringWidth("THE BEST ❤");
+        int posicao = (original.getWidth() / 2) - (stringLargura / 2);
+        graphics.drawString("THE BEST ❤", posicao, original.getHeight() + 25);
 
         ImageIO.write(novaImagem, "png", new File("saida/" + nomeArquivo));
     }
