@@ -87,8 +87,9 @@ Vamos tornar nossa aplicação acessível por qualquer pessoa, fazendo o deploy 
 - `Link do Repositório`: https://github.com/getmarcos/linguagens-api
 ## 🛠️ Abrir e rodar o projeto
 
-**Com a URL da API, basta adcionar /linguagens e você para que o resultado retorne para você**
-**Para mais operações, como DELETE, PUT, PATCH basta adcionar /linguagens/{id}**
+**Com a URL da API, basta adicionar /linguagens e você para que o resultado retorne para você**
+
+**Para mais operações, como DELETE, PUT, PATCH basta adicionar /linguagens/{id}**
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
