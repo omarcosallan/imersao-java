@@ -2,6 +2,13 @@
 
 <h1 align="center"> Imersão Java - Alura-Stickers 💻🔥 </h1>
 
+| 🪧 Vitrine.Dev |     |
+| -------------  | --- |
+| ✨ Nome        | Imersão Java - Alura Sticker 💻🔥
+| 🏷️ Tecnologias | Java, Spring, MongoDB, Heroku, Git
+| 🚀 URL         | https://linguagens-imersao-alura-api.herokuapp.com/linguagens
+| 🤿 Desafio | https://www.alura.com.br/imersao-java
+
 ## Dia 01 - CONSUMINDO UMA API DE FILMES COM JAVA 🔨
 
 O objetivo foi consumir a API do IMDb (até derubar) e exibir os filmes mais populares, destacando seus pôsteres e visualizando sua classificação.
